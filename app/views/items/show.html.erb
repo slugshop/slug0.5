@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Itemname:</b>
+  <%= @item.itemName %>
+</p>
+
+<p>
+  <b>Itemtype:</b>
+  <%= @item.itemType %>
+</p>
+
+<p>
+  <b>Itemowner:</b>
+  <%= @item.itemOwner %>
+</p>
+
+<p>
+  <b>Isavailible:</b>
+  <%= @item.isAvailible %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

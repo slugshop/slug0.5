@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  loanTo: 1
+  itemID: 1
+  dateStart: 2012-02-17
+  loanLength: 1
+  isActive: false
+
+two:
+  loanTo: 1
+  itemID: 1
+  dateStart: 2012-02-17
+  loanLength: 1
+  isActive: false

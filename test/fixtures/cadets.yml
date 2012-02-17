@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  first: MyString
+  last: MyString
+  rack: 1
+  roomnum: 1
+  company: MyString
+
+two:
+  first: MyString
+  last: MyString
+  rack: 1
+  roomnum: 1
+  company: MyString

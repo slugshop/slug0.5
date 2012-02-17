@@ -1,0 +1,4 @@
+rails g scaffold cadet first:string last:string rack:integer roomnum:integer company:string
+rails g scaffold item itemName:string itemType:integer itemOwner:integer isAvailible:boolean
+rails g scaffold onLoan loanTo:integer itemID:integer dateStart:date loanLength:integer isActive:boolean
+rails g scaffold barrack rackName:string  

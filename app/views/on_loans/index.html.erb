@@ -1,0 +1,31 @@
+<h1>Listing on_loans</h1>
+
+<table>
+  <tr>
+    <th>Loanto</th>
+    <th>Itemid</th>
+    <th>Datestart</th>
+    <th>Loanlength</th>
+    <th>Isactive</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @on_loans.each do |on_loan| %>
+  <tr>
+    <td><%= on_loan.loanTo %></td>
+    <td><%= on_loan.itemID %></td>
+    <td><%= on_loan.dateStart %></td>
+    <td><%= on_loan.loanLength %></td>
+    <td><%= on_loan.isActive %></td>
+    <td><%= link_to 'Show', on_loan %></td>
+    <td><%= link_to 'Edit', edit_on_loan_path(on_loan) %></td>
+    <td><%= link_to 'Destroy', on_loan, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New On loan', new_on_loan_path %>

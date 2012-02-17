@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First:</b>
+  <%= @cadet.first %>
+</p>
+
+<p>
+  <b>Last:</b>
+  <%= @cadet.last %>
+</p>
+
+<p>
+  <b>Rack:</b>
+  <%= @cadet.rack %>
+</p>
+
+<p>
+  <b>Roomnum:</b>
+  <%= @cadet.roomnum %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @cadet.company %>
+</p>
+
+
+<%= link_to 'Edit', edit_cadet_path(@cadet) %> |
+<%= link_to 'Back', cadets_path %>

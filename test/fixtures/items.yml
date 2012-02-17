@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  itemName: MyString
+  itemType: 1
+  itemOwner: 1
+  isAvailible: false
+
+two:
+  itemName: MyString
+  itemType: 1
+  itemOwner: 1
+  isAvailible: false

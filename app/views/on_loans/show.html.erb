@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Loanto:</b>
+  <%= @on_loan.loanTo %>
+</p>
+
+<p>
+  <b>Itemid:</b>
+  <%= @on_loan.itemID %>
+</p>
+
+<p>
+  <b>Datestart:</b>
+  <%= @on_loan.dateStart %>
+</p>
+
+<p>
+  <b>Loanlength:</b>
+  <%= @on_loan.loanLength %>
+</p>
+
+<p>
+  <b>Isactive:</b>
+  <%= @on_loan.isActive %>
+</p>
+
+
+<%= link_to 'Edit', edit_on_loan_path(@on_loan) %> |
+<%= link_to 'Back', on_loans_path %>
