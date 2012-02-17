@@ -1,0 +1,31 @@
+<h1>Listing cadets</h1>
+
+<table>
+  <tr>
+    <th>First</th>
+    <th>Last</th>
+    <th>Rack</th>
+    <th>Roomnum</th>
+    <th>Company</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cadets.each do |cadet| %>
+  <tr>
+    <td><%= cadet.first %></td>
+    <td><%= cadet.last %></td>
+    <td><%= cadet.barrack.rackName %></td>
+    <td><%= cadet.roomnum %></td>
+    <td><%= cadet.company %></td>
+    <td><%= link_to 'Show', cadet %></td>
+    <td><%= link_to 'Edit', edit_cadet_path(cadet) %></td>
+    <td><%= link_to 'Destroy', cadet, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cadet', new_cadet_path %>

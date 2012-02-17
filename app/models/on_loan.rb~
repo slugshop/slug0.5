@@ -1,0 +1,5 @@
+class OnLoan < ActiveRecord::Base
+
+belongs_to :accty, :polymorphic => true 
+
+end

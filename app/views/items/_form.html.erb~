@@ -21,8 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :itemOwner %><br />
-    <% @cadets = Cadet.all%>
-    <%= f.collection_select(:itemOwner, @cadets, :id, :fullname)%>
+    <%= f.number_field :itemOwner %>
   </div>
   <div class="field">
     <%= f.label :isAvailible %><br />

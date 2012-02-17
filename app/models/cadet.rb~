@@ -1,7 +1,7 @@
 class Cadet < ActiveRecord::Base
 
-has_many :items, :dependent => :destroy
-has_many :on_loans, :dependent => :destroy
+has_many :item, :dependent => :destroy
+has_many :on_loan, :dependent => :destroy
 belongs_to :barrack
   
 

@@ -1,6 +1,6 @@
 class Barrack < ActiveRecord::Base
 
-has_many :cadet, :dependent => :destroy
+belongs_to :cadet, :dependent => :destroy
 
 
 

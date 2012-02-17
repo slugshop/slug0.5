@@ -1,11 +1,10 @@
 class Item < ActiveRecord::Base
 
-default_scope :order => "itemName"
 belongs_to :cadet
 has_many :on_loan, :dependent => :destroy
 
-#def self.availibility
-#	find(:all, :order=>"itemName")
-#end
+def self.availibility
+	find(:all, :order=>"itemName")
+end
 
 end

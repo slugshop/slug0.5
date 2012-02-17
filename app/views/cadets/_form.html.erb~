@@ -19,11 +19,10 @@
     <%= f.label :last %><br />
     <%= f.text_field :last %>
   </div>
-  
+  <div class="field">
     <%= f.label :rack %><br />
-    <% @barracks = Barrack.all%>
-    <%= f.collection_select(:rack, @barracks, :id, :rackName)%>
-  
+    <%= f.number_field :rack %>
+  </div>
   <div class="field">
     <%= f.label :roomnum %><br />
     <%= f.number_field :roomnum %>
