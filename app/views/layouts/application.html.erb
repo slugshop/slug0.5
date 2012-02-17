@@ -2,13 +2,14 @@
 <html>
 <head>
   <title>Slug57</title>
-  <%= stylesheet_link_tag :all %>
+  <%= stylesheet_link_tag "scaffold" %>
+  <%= stylesheet_link_tag "style", :media => "all" %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div id="page">
 <%= yield %>
-
+</div>
 </body>
 </html>
